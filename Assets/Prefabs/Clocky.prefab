@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 1634190776107987238}
   m_Layer: 0
   m_Name: Clocky
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -425,7 +425,7 @@ MonoBehaviour:
   _groundCheck: {fileID: 1634190775468141166}
   _groundMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   _camera: {fileID: 0}
   _fixedAxisMovement: 0
   _rotationSoftZone: 0.5

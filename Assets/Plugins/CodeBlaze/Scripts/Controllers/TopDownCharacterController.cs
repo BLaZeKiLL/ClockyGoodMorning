@@ -39,7 +39,6 @@ namespace CodeBlaze.Controllers {
 
         private void Update() {
             _isGrounded = CheckIsGrounded();
-            
             Gravity();
             Movement();
             Rotate();
