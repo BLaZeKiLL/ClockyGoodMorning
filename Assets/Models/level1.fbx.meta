@@ -2,7 +2,16 @@ fileFormatVersion: 2
 guid: 848ef2b7365a1e0499383ba7f948c9ac
 ModelImporter:
   serializedVersion: 19300
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 7360616893068399965
+    second: Clocky|Alarm
+  - first:
+      74: 3665830351715856892
+    second: Clocky|Idle
+  - first:
+      74: 7681610694038748307
+    second: Clocky|Walk
   externalObjects: {}
   materials:
     materialImportMode: 0
