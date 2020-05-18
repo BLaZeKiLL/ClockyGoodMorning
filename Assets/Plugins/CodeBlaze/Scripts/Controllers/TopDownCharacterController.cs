@@ -66,6 +66,7 @@ namespace CodeBlaze.Controllers {
             MovementUpdate?.Invoke(moveDirection, _speed);
             
             _characterController.Move(moveDirection * (_speed * Time.deltaTime) + _gvelocity * Time.deltaTime);
+            _ground.SetNormalAndPosition(Vector3.up, new Vector3(0f, transform.position.y, 0f));
         }
 
         private void Rotate() {
