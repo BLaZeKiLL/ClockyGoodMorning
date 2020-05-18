@@ -6,6 +6,15 @@ ModelImporter:
   - first:
       74: -6806599378098212246
     second: Hooman|wake
+  - first:
+      74: -8209391743255179503
+    second: Hooman|Hooman_Idle
+  - first:
+      74: -2307865933261576719
+    second: Hooman|Hooman_Wake
+  - first:
+      74: -1898167552162909912
+    second: Hooman|Hooman_Awake
   externalObjects: {}
   materials:
     materialImportMode: 0
