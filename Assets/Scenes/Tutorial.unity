@@ -139,7 +139,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &23321662
 Transform:
@@ -270,10 +270,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: PottedPlant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2438760716898166234, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cff8a032cc79da54ebc57702634e5666, type: 3}
@@ -299,7 +309,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &28179610
 Transform:
@@ -432,7 +442,12 @@ PrefabInstance:
     - target: {fileID: 2382467304949716360, guid: 147faa0198bb8114b90517d36bafa7ec,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967287
+      objectReference: {fileID: 0}
+    - target: {fileID: 2382467304949716360, guid: 147faa0198bb8114b90517d36bafa7ec,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 147faa0198bb8114b90517d36bafa7ec, type: 3}
@@ -447,6 +462,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671009207056774076, guid: 7408c93ce2e91344b86f746de6465b52,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8541529661474357679, guid: 7408c93ce2e91344b86f746de6465b52,
         type: 3}
@@ -527,6 +547,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401555710706468340, guid: 09f754164adfc2a469975fa1b09e11e9,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7966230953617962983, guid: 09f754164adfc2a469975fa1b09e11e9,
         type: 3}
@@ -646,7 +671,7 @@ GameObject:
   m_Name: loungeChairRelax (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &145209207
@@ -842,7 +867,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &190577285
 Transform:
@@ -1052,6 +1077,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 3361521050718959660, guid: 16548ee6b295a924eaebde3671ddeea2,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6652875278502039847, guid: 16548ee6b295a924eaebde3671ddeea2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1122,6 +1152,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7640527234305975092, guid: 16548ee6b295a924eaebde3671ddeea2,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16548ee6b295a924eaebde3671ddeea2, type: 3}
@@ -1323,6 +1358,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 936339791379879283, guid: e9020951690944c42ac5bb3573ccc10e,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1495857089590911407, guid: e9020951690944c42ac5bb3573ccc10e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1406,6 +1446,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 7817998558811834843, guid: e9020951690944c42ac5bb3573ccc10e,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9020951690944c42ac5bb3573ccc10e, type: 3}
 --- !u!4 &409592990 stripped
@@ -1486,6 +1531,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 7652352631691607441, guid: efc720b5590afc44c90cee661efc9f66,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efc720b5590afc44c90cee661efc9f66, type: 3}
 --- !u!4 &432072388 stripped
@@ -1510,7 +1560,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &432289640
 Transform:
@@ -1585,6 +1635,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361521050718959660, guid: 16548ee6b295a924eaebde3671ddeea2,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3934549142407990512, guid: 16548ee6b295a924eaebde3671ddeea2,
         type: 3}
@@ -1668,6 +1723,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7640527234305975092, guid: 16548ee6b295a924eaebde3671ddeea2,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16548ee6b295a924eaebde3671ddeea2, type: 3}
@@ -1775,10 +1835,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: PottedPlant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2438760716898166234, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cff8a032cc79da54ebc57702634e5666, type: 3}
@@ -2077,10 +2147,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: PottedPlant
       objectReference: {fileID: 0}
+    - target: {fileID: 2438760716898166234, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cff8a032cc79da54ebc57702634e5666, type: 3}
@@ -2101,6 +2181,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 936339791379879283, guid: e9020951690944c42ac5bb3573ccc10e,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5187816314724097366, guid: e9020951690944c42ac5bb3573ccc10e,
         type: 3}
@@ -2172,6 +2257,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7817998558811834843, guid: e9020951690944c42ac5bb3573ccc10e,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9020951690944c42ac5bb3573ccc10e, type: 3}
@@ -2588,10 +2678,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: PottedPlant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2438760716898166234, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cff8a032cc79da54ebc57702634e5666, type: 3}
@@ -2668,10 +2768,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: PottedPlant
       objectReference: {fileID: 0}
+    - target: {fileID: 2438760716898166234, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cff8a032cc79da54ebc57702634e5666, type: 3}
@@ -2748,10 +2858,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: PottedPlant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2438760716898166234, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cff8a032cc79da54ebc57702634e5666, type: 3}
@@ -2777,7 +2897,7 @@ GameObject:
   m_Name: chair (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &851900143
@@ -2925,6 +3045,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6380529983284729615, guid: dfe3c590b33779e419837416125d668e,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfe3c590b33779e419837416125d668e, type: 3}
@@ -3154,7 +3279,7 @@ GameObject:
   m_Name: chair (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &991391169
@@ -3298,10 +3423,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: PottedPlant
       objectReference: {fileID: 0}
+    - target: {fileID: 2438760716898166234, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cff8a032cc79da54ebc57702634e5666, type: 3}
@@ -3327,7 +3462,7 @@ GameObject:
   m_Name: trashcan (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1002593562
@@ -3422,6 +3557,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1860696529466602387, guid: 4cac4cba78797d8488d0ec5ee68c995a,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3425511410119885184, guid: 4cac4cba78797d8488d0ec5ee68c995a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3496,6 +3636,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lamp (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671009207056774076, guid: 7408c93ce2e91344b86f746de6465b52,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8541529661474357679, guid: 7408c93ce2e91344b86f746de6465b52,
         type: 3}
@@ -3707,10 +3852,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: PottedPlant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2438760716898166234, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cff8a032cc79da54ebc57702634e5666, type: 3}
@@ -3892,6 +4047,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp
       objectReference: {fileID: 0}
+    - target: {fileID: 4671009207056774076, guid: 7408c93ce2e91344b86f746de6465b52,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8541529661474357679, guid: 7408c93ce2e91344b86f746de6465b52,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3966,6 +4126,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lamp (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671009207056774076, guid: 7408c93ce2e91344b86f746de6465b52,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8541529661474357679, guid: 7408c93ce2e91344b86f746de6465b52,
         type: 3}
@@ -4143,6 +4308,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 2732568018151639123, guid: db40bb9aea7724e48860faefc90d3c9e,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db40bb9aea7724e48860faefc90d3c9e, type: 3}
 --- !u!4 &1177158807 stripped
@@ -4161,7 +4331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1181794093}
   m_Layer: 0
-  m_Name: Interactables
+  m_Name: Dynamics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4199,7 +4369,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1189569886
 Transform:
@@ -4329,10 +4499,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: PottedPlant
       objectReference: {fileID: 0}
+    - target: {fileID: 2438760716898166234, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cff8a032cc79da54ebc57702634e5666, type: 3}
@@ -4358,7 +4538,7 @@ GameObject:
   m_Name: chair (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1255783612
@@ -4609,6 +4789,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1860696529466602387, guid: 4cac4cba78797d8488d0ec5ee68c995a,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3425511410119885184, guid: 4cac4cba78797d8488d0ec5ee68c995a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4719,6 +4904,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 3077222773520623500, guid: b96f0f19a3918e14d82d683ce3883f8c,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5038282388802967253, guid: b96f0f19a3918e14d82d683ce3883f8c,
         type: 3}
       propertyPath: m_Name
@@ -4728,6 +4918,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5038282388802967253, guid: b96f0f19a3918e14d82d683ce3883f8c,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7040290226717700009, guid: b96f0f19a3918e14d82d683ce3883f8c,
         type: 3}
@@ -4814,7 +5009,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1501252396
 Transform:
@@ -5081,6 +5276,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 2732568018151639123, guid: db40bb9aea7724e48860faefc90d3c9e,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db40bb9aea7724e48860faefc90d3c9e, type: 3}
 --- !u!4 &1590582906 stripped
@@ -5207,6 +5407,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 4671009207056774076, guid: 7408c93ce2e91344b86f746de6465b52,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8541529661474357679, guid: 7408c93ce2e91344b86f746de6465b52,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5287,6 +5492,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 6401555710706468340, guid: 09f754164adfc2a469975fa1b09e11e9,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7966230953617962983, guid: 09f754164adfc2a469975fa1b09e11e9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5366,6 +5576,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401555710706468340, guid: 09f754164adfc2a469975fa1b09e11e9,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7966230953617962983, guid: 09f754164adfc2a469975fa1b09e11e9,
         type: 3}
@@ -5497,10 +5712,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: PottedPlant
       objectReference: {fileID: 0}
+    - target: {fileID: 2438760716898166234, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cff8a032cc79da54ebc57702634e5666, type: 3}
@@ -5672,10 +5897,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: PottedPlant
       objectReference: {fileID: 0}
+    - target: {fileID: 2438760716898166234, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cff8a032cc79da54ebc57702634e5666, type: 3}
@@ -5881,7 +6116,7 @@ GameObject:
   m_Name: cabinetTelevision (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1801936910
@@ -6206,6 +6441,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4671009207056774076, guid: 7408c93ce2e91344b86f746de6465b52,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8541529661474357679, guid: 7408c93ce2e91344b86f746de6465b52,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6284,7 +6524,7 @@ GameObject:
   m_Name: televisionModern (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2126681701
@@ -6365,7 +6605,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2128177067
 Transform:
@@ -6639,7 +6879,7 @@ GameObject:
   m_Name: drawer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &286140062552480643
@@ -6658,7 +6898,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1001 &318278165070318101
 PrefabInstance:
@@ -6727,10 +6967,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: PottedPlant
       objectReference: {fileID: 0}
+    - target: {fileID: 2438760716898166234, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613613875977865993, guid: cff8a032cc79da54ebc57702634e5666,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cff8a032cc79da54ebc57702634e5666, type: 3}
@@ -6813,6 +7063,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671009207056774076, guid: 7408c93ce2e91344b86f746de6465b52,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8541529661474357679, guid: 7408c93ce2e91344b86f746de6465b52,
         type: 3}
@@ -7037,7 +7292,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!23 &562411852127564400
 MeshRenderer:
@@ -7094,7 +7349,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &604548446626009488
 GameObject:
@@ -7112,7 +7367,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!33 &725923814326295805
 MeshFilter:
@@ -7138,7 +7393,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!33 &838332285656338444
 MeshFilter:
@@ -7252,7 +7507,7 @@ GameObject:
   m_Name: chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1025843213476728602
@@ -7270,7 +7525,7 @@ GameObject:
   m_Name: blenderTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1074161458766088516
@@ -7632,7 +7887,7 @@ GameObject:
   m_Name: books (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1434869707419491804 stripped
@@ -7713,7 +7968,7 @@ GameObject:
   m_Name: doorRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1567559157768586222
@@ -7731,7 +7986,7 @@ GameObject:
   m_Name: doorRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1001 &1587150200186397892
@@ -7806,6 +8061,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 2732568018151639123, guid: db40bb9aea7724e48860faefc90d3c9e,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db40bb9aea7724e48860faefc90d3c9e, type: 3}
 --- !u!1 &1589890189561684686
@@ -7823,7 +8083,7 @@ GameObject:
   m_Name: blenderCup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1001 &1634190776107987236
@@ -7945,7 +8205,7 @@ GameObject:
   m_Name: dryerDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!23 &2000799804365533023
@@ -8026,7 +8286,7 @@ GameObject:
   m_Name: bathroomCabinetDrawer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &2110025365749908042
@@ -8106,7 +8366,7 @@ GameObject:
   m_Name: books (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!23 &2215095774343875468
@@ -8164,7 +8424,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!33 &2256385156677150702
 MeshFilter:
@@ -8300,6 +8560,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 3077222773520623500, guid: b96f0f19a3918e14d82d683ce3883f8c,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5038282388802967253, guid: b96f0f19a3918e14d82d683ce3883f8c,
         type: 3}
       propertyPath: m_Name
@@ -8309,6 +8574,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5038282388802967253, guid: b96f0f19a3918e14d82d683ce3883f8c,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8336386092083438790, guid: b96f0f19a3918e14d82d683ce3883f8c,
         type: 3}
@@ -8456,7 +8726,7 @@ GameObject:
   m_Name: cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!23 &2465355788419036082
@@ -8618,7 +8888,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &2652731318921882534
 GameObject:
@@ -8635,7 +8905,7 @@ GameObject:
   m_Name: drawer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2705303659371980584
@@ -8697,7 +8967,7 @@ GameObject:
   m_Name: books (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!33 &2881712221589469945
@@ -8776,7 +9046,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1001 &3168009757135213802
 PrefabInstance:
@@ -8794,6 +9064,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401555710706468340, guid: 09f754164adfc2a469975fa1b09e11e9,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7966230953617962983, guid: 09f754164adfc2a469975fa1b09e11e9,
         type: 3}
@@ -8868,7 +9143,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!23 &3233912261870920897
 MeshRenderer:
@@ -8942,7 +9217,7 @@ GameObject:
   m_Name: Group
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3591347003254531536
@@ -9093,7 +9368,7 @@ GameObject:
   m_Name: toilet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &3809478064632139806
@@ -9556,7 +9831,7 @@ GameObject:
   m_Name: books (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1001 &4120045856388622441
@@ -9872,7 +10147,7 @@ GameObject:
   m_Name: bathroomCabinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &4683391762049190480
@@ -9924,7 +10199,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4712102754203127235
 Transform:
@@ -9994,7 +10269,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5006512734800313325
 Transform:
@@ -10838,7 +11113,7 @@ GameObject:
   m_Name: drawerBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!33 &5240199716905376734
@@ -10887,7 +11162,7 @@ GameObject:
   m_Name: cabinetTelevision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &5342862573344662233
@@ -10918,7 +11193,7 @@ GameObject:
   m_Name: pillowRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5399325369568027054
@@ -10951,7 +11226,7 @@ GameObject:
   m_Name: bathroomMirror
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!23 &5460858830991759809
@@ -11174,7 +11449,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!23 &5742023544670315671
 MeshRenderer:
@@ -11329,6 +11604,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 2456951734079826726, guid: 1c6e70a4131eaa84285eefb487471a7b,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c6e70a4131eaa84285eefb487471a7b, type: 3}
 --- !u!1 &5865950144369376902
@@ -11346,7 +11626,7 @@ GameObject:
   m_Name: drawerTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!23 &5915899495469684228
@@ -11445,7 +11725,7 @@ GameObject:
   m_Name: chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &6049469133807136030
@@ -11485,7 +11765,7 @@ GameObject:
   m_Name: bookcaseOpen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &6075379260425334732
@@ -11525,7 +11805,7 @@ GameObject:
   m_Name: desk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &6125907730038586635
@@ -11587,7 +11867,7 @@ GameObject:
   m_Name: Couch_x3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &6281112726681658524
@@ -11899,7 +12179,7 @@ GameObject:
   m_Name: pillowLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!23 &6689924544824218526
@@ -11971,7 +12251,7 @@ GameObject:
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1001 &6739470281396532450
@@ -11985,6 +12265,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361521050718959660, guid: 16548ee6b295a924eaebde3671ddeea2,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6652875278502039847, guid: 16548ee6b295a924eaebde3671ddeea2,
         type: 3}
@@ -12051,6 +12336,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 7640527234305975092, guid: 16548ee6b295a924eaebde3671ddeea2,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16548ee6b295a924eaebde3671ddeea2, type: 3}
 --- !u!23 &6754744779300359073
@@ -12110,7 +12400,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &6774612744676257912
 GameObject:
@@ -12128,7 +12418,7 @@ GameObject:
   m_Name: trashcan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &6774612744676257913
@@ -12175,6 +12465,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 936339791379879283, guid: e9020951690944c42ac5bb3573ccc10e,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6495393100635585480, guid: e9020951690944c42ac5bb3573ccc10e,
         type: 3}
@@ -12241,6 +12536,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 7817998558811834843, guid: e9020951690944c42ac5bb3573ccc10e,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9020951690944c42ac5bb3573ccc10e, type: 3}
 --- !u!33 &6939635378482877472
@@ -12280,7 +12580,7 @@ GameObject:
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!33 &7043078605884045753
@@ -12415,7 +12715,7 @@ GameObject:
   m_Name: cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!23 &7352044082027848659
@@ -12797,7 +13097,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &7669456349889156967
 GameObject:
@@ -12815,7 +13115,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &7687688214559264241
 GameObject:
@@ -12833,7 +13133,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7700040424044590963
 Transform:
@@ -14639,6 +14939,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 2675218766597286299, guid: b717b897ae1b1484a8e19ca47f8a80fa,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b717b897ae1b1484a8e19ca47f8a80fa, type: 3}
 --- !u!4 &7807547507024713951 stripped
@@ -14670,7 +14975,7 @@ GameObject:
   m_Name: kitchenMicrowave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!23 &7862604683252153813
@@ -14729,7 +15034,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!23 &7938432100816952165
 MeshRenderer:
@@ -14825,7 +15130,7 @@ GameObject:
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &7989714956045002129
@@ -14843,7 +15148,7 @@ GameObject:
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &7989714956677981976
@@ -14861,7 +15166,7 @@ GameObject:
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!23 &7999324952076356364
@@ -14954,7 +15259,7 @@ GameObject:
   m_Name: books (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8157129813827472276
@@ -14972,7 +15277,7 @@ GameObject:
   m_Name: books
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!23 &8173891455818619865
@@ -15155,7 +15460,7 @@ GameObject:
   m_Name: computerScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172667411440466
@@ -15174,7 +15479,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172667455140293
 GameObject:
@@ -15210,7 +15515,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172667479382563
 GameObject:
@@ -15227,7 +15532,7 @@ GameObject:
   m_Name: computerMouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172667517996244
@@ -15282,7 +15587,7 @@ GameObject:
   m_Name: loungeChairRelax
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &8296172667594917435
@@ -15314,7 +15619,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172667631984656
 GameObject:
@@ -15332,7 +15637,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172667722028790
 GameObject:
@@ -15350,7 +15655,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172667739595729
 GameObject:
@@ -15368,7 +15673,7 @@ GameObject:
   m_Name: kitchenCabinetDrawer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &8296172667739595730
@@ -15418,7 +15723,7 @@ GameObject:
   m_Name: chairDesk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172668130527666
@@ -15437,7 +15742,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967287
   m_IsActive: 1
 --- !u!1 &8296172668188119794
 GameObject:
@@ -15473,7 +15778,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172668304122156
 GameObject:
@@ -15491,7 +15796,7 @@ GameObject:
   m_Name: kitchenCabinetCornerInner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &8296172668304122157
@@ -15523,7 +15828,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172668341965068
 GameObject:
@@ -15576,7 +15881,7 @@ GameObject:
   m_Name: televisionModern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172668758394655
@@ -15595,7 +15900,7 @@ GameObject:
   m_Name: kitchenSink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &8296172668758394656
@@ -15627,7 +15932,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172668777447803
 GameObject:
@@ -15662,7 +15967,7 @@ GameObject:
   m_Name: kitchenCabinetUpperDouble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172668814483973
@@ -15681,7 +15986,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172668821573756
 GameObject:
@@ -15728,13 +16033,30 @@ GameObject:
   - component: {fileID: 5006512735670000964}
   - component: {fileID: 4044710141505529714}
   - component: {fileID: 7718390323248929675}
+  - component: {fileID: 8296172668856741720}
   m_Layer: 0
   m_Name: rugRectangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967287
   m_IsActive: 1
+--- !u!114 &8296172668856741720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172668856741719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 0
+  m_Area: 0
+  m_IgnoreFromBuild: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &8296172668966924951
 GameObject:
   m_ObjectHideFlags: 0
@@ -15751,7 +16073,7 @@ GameObject:
   m_Name: bedDouble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &8296172668966924952
@@ -15783,7 +16105,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172669038569078
 GameObject:
@@ -15801,7 +16123,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172669160499982
 GameObject:
@@ -15818,7 +16140,7 @@ GameObject:
   m_Name: computerKeyboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172669167494104
@@ -15837,7 +16159,7 @@ GameObject:
   m_Name: kitchenFridgeLarge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &8296172669167494105
@@ -15869,7 +16191,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172669235715641
 GameObject:
@@ -15887,7 +16209,7 @@ GameObject:
   m_Name: dryer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &8296172669235715642
@@ -15919,7 +16241,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172669354513035
 GameObject:
@@ -15937,7 +16259,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172669410767514
 GameObject:
@@ -15955,7 +16277,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8296172669460317590
 GameObject:
@@ -15973,7 +16295,7 @@ GameObject:
   m_Name: kitchenStove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &8296172669460317591
@@ -16135,7 +16457,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!23 &8450525394392794825
 MeshRenderer:
@@ -16192,7 +16514,7 @@ GameObject:
   m_Name: kitchenBlender
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8572985047895157306
@@ -16226,7 +16548,7 @@ GameObject:
   m_Name: table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &8592755551601704913
@@ -16328,6 +16650,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 6380529983284729615, guid: dfe3c590b33779e419837416125d668e,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfe3c590b33779e419837416125d668e, type: 3}
 --- !u!33 &8629617877307922564
@@ -16381,7 +16708,7 @@ GameObject:
   m_Name: bathroomCabinet (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8995807974079343154
@@ -16399,7 +16726,7 @@ GameObject:
   m_Name: doorLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &8995807974715477063
@@ -16417,7 +16744,7 @@ GameObject:
   m_Name: doorLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &9023615110343327830
@@ -16538,5 +16865,5 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
