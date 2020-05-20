@@ -15,6 +15,27 @@ ModelImporter:
   - first:
       74: -1898167552162909912
     second: Hooman|Hooman_Awake
+  - first:
+      74: -5867714186442347661
+    second: Handy|Handy_Idle
+  - first:
+      74: -7152337346066632974
+    second: Handy|Handy_Walk
+  - first:
+      74: -761130083243010439
+    second: Handy|Hooman_Awake
+  - first:
+      74: 4234958974659416197
+    second: Handy|Hooman_Idle
+  - first:
+      74: -4162891903589177104
+    second: Handy|Hooman_Wake
+  - first:
+      74: 7042743567662832868
+    second: Hooman|Handy_Idle
+  - first:
+      74: -3893789069559972598
+    second: Hooman|Handy_Walk
   externalObjects: {}
   materials:
     materialImportMode: 0
