@@ -1757,7 +1757,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &538190033
 Transform:
   m_ObjectHideFlags: 0
@@ -1770,7 +1770,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6804335522071907819}
-  - {fileID: 1115713749}
   - {fileID: 5006512736320453011}
   m_Father: {fileID: 1181794093}
   m_RootOrder: 0
@@ -4015,8 +4014,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 538190033}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1115713750
 MonoBehaviour:
@@ -4038,7 +4037,7 @@ MonoBehaviour:
       type: 3}
     data_cachedStartup: 
     cacheStartup: 1
-  showNavGraphs: 0
+  showNavGraphs: 1
   showUnwalkableNodes: 1
   debugMode: 0
   debugFloor: 0
@@ -4497,7 +4496,7 @@ Transform:
   - {fileID: 538190033}
   - {fileID: 1537949082}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1189569885
 GameObject:
@@ -5556,8 +5555,8 @@ GameObject:
   - component: {fileID: 1609123401}
   - component: {fileID: 1609123403}
   - component: {fileID: 1609123402}
-  - component: {fileID: 1609123405}
   - component: {fileID: 1609123404}
+  - component: {fileID: 1609123405}
   m_Layer: 0
   m_Name: Mesh
   m_TagString: Untagged
@@ -5572,13 +5571,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609123400}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5006512736320453011}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1609123402
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10453,7 +10452,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &4683391762049190481
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10990,14 +10989,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8296172668215856000}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 8, z: 0.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1609123401}
   m_Father: {fileID: 538190033}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5006512736343859425
 Transform:
   m_ObjectHideFlags: 0
@@ -16072,6 +16071,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5006512736320453011}
   - component: {fileID: 8296172668215856002}
+  - component: {fileID: 8296172668215856001}
+  - component: {fileID: 8296172668215856004}
+  - component: {fileID: 8296172668215856003}
   m_Layer: 0
   m_Name: Handy
   m_TagString: Untagged
@@ -16079,6 +16081,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8296172668215856001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172668215856000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c3cd605231345ebbea1c619ce9e7acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nextWaypointDistance: 1
+  _speed: 2
 --- !u!114 &8296172668215856002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16093,7 +16109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   drawGizmos: 1
-  detailedGizmos: 0
+  detailedGizmos: 1
   startEndModifier:
     addPoints: 0
     exactStartPoint: 3
@@ -16106,7 +16122,32 @@ MonoBehaviour:
   traversableTags: -1
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
-    value: -1
+    value: 1
+--- !u!65 &8296172668215856003
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172668215856000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6, y: 1, z: 6}
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &8296172668215856004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172668215856000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1229a38af6914794ba037a02bfc60904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8296172668285736968
 GameObject:
   m_ObjectHideFlags: 0
@@ -16378,7 +16419,6 @@ GameObject:
   - component: {fileID: 5006512735670000964}
   - component: {fileID: 4044710141505529714}
   - component: {fileID: 7718390323248929675}
-  - component: {fileID: 8296172668856741720}
   m_Layer: 10
   m_Name: rugRectangle
   m_TagString: Untagged
@@ -16386,18 +16426,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967287
   m_IsActive: 1
---- !u!114 &8296172668856741720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8296172668856741719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8296172668966924951
 GameObject:
   m_ObjectHideFlags: 0
@@ -16428,8 +16456,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 9.5, y: 3.75, z: 11.25}
-  m_Center: {x: 4.7799997, y: 1.875, z: 5.625}
+  m_Size: {x: 9.5, y: 3.75, z: 11.9763155}
+  m_Center: {x: 4.7799997, y: 1.875, z: 5.261843}
 --- !u!1 &8296172669014766561
 GameObject:
   m_ObjectHideFlags: 0
