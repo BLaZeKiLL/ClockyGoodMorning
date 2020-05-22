@@ -4,21 +4,23 @@ using System.Collections.Generic;
 
 using ClokysGoodMorning.Controllers;
 
+using CodeBlaze.Systems;
+
 using UnityEngine;
 
 namespace ClokysGoodMorning.Entities {
 
     public class Hoomans : MonoBehaviour {
         
-        [Range(5f, 30f)] [SerializeField] private float _snoozeDuartion = 10f;
-        [Range(0.5f, 5f)] [SerializeField] private float _wakeyTime = 1f;
+        [Range(5, 30)] [SerializeField] private int _snoozeSecs = 10;
+        [Range(1, 5)] [SerializeField] private int _wakeUpSecs = 1;
         [Range(0.5f, 2f)] [SerializeField] private float _destroyTimeout = 1f;
 
         private Animator[] _hoomans;
         private SpecialInputController _controller;
-        private Coroutine _ringHandel;
-        private Coroutine _snoozeHandel;
-        private float _currCountdownValue;
+        
+        private TickEvent _ringHandel;
+        private TickEvent _snoozeHandel;
         
         private static readonly int Wake = Animator.StringToHash("Wake");
 
@@ -27,18 +29,17 @@ namespace ClokysGoodMorning.Entities {
         }
 
         public void Snooze() {
-            if (_currCountdownValue > float.Epsilon) return;
-            Debug.Log("SNOOOZE!!!");
-            _snoozeHandel = StartCoroutine(Countdown(_snoozeDuartion));
+            if (_snoozeHandel == null || _snoozeHandel.IsDone)
+                _snoozeHandel = new TickEvent(TickUtils.SecToTicks(_snoozeSecs));
         }
 
         private void Start() {
             _hoomans = GetComponentsInChildren<Animator>();
         }
 
-        // private void OnDestroy() {
-        //     _controller.AlarmPress -= RingHandler;
-        // }
+        private void OnDestroy() {
+            _ringHandel?.Destroy();
+        }
 
         private void OnTriggerEnter(Collider other) {
             if (!other.CompareTag("Player")) return;
@@ -54,39 +55,20 @@ namespace ClokysGoodMorning.Entities {
 
         private void RingHandler(bool state) {
             if (state) {
-                if (_currCountdownValue <= float.Epsilon)
-                    _ringHandel = StartCoroutine(Ring());
-                else {
-                    Debug.Log($"Snooze : {_currCountdownValue}");
+                if (_snoozeHandel == null || _snoozeHandel.IsDone) {
+                    Debug.Log("Beep");
+                    _ringHandel = new TickEvent(TickUtils.SecToTicks(_wakeUpSecs), tick => {
+                        _controller.AlarmPress -= RingHandler;
+                        Debug.Log("Done");
+                        foreach (var animator in _hoomans) {
+                            animator.SetBool(Wake, true);
+                        }
+                    });
+                } else {
+                    Debug.Log($"Snooze : {_snoozeHandel.GetTick()} Ticks");
                 }
-            } else if (_ringHandel != null) {
-                StopCoroutine(_ringHandel);
-            }
-        }
-
-        private IEnumerator Ring() {
-            var time = 0f;
-
-            while (time <= _wakeyTime) {
-                time += Time.deltaTime;
-
-                yield return null;
-            }
-            
-            _controller.AlarmPress -= RingHandler;
-            
-            foreach (var animator in _hoomans) {
-                animator.SetBool(Wake, true);
-            }
-        }
-        
-        private IEnumerator Countdown(float countdownValue)
-        {
-            _currCountdownValue = countdownValue;
-            while (_currCountdownValue > 0)
-            {
-                yield return new WaitForSeconds(1.0f);
-                _currCountdownValue--;
+            } else {
+                _ringHandel?.Destroy();
             }
         }
 

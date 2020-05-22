@@ -15,7 +15,7 @@ namespace CodeBlaze.Systems {
         public static event EventHandler<TickArgs> OnMicroTick;
         public static event EventHandler<TickArgs> OnTick;
         
-        private const float TICK_TIMER = .2f;
+        public const float TICK_TIMER = .2f;
 
         private static int _tick;
 
