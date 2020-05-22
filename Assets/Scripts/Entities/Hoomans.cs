@@ -10,17 +10,26 @@ namespace ClokysGoodMorning.Entities {
 
     public class Hoomans : MonoBehaviour {
         
+        [Range(5f, 30f)] [SerializeField] private float _snoozeDuartion = 10f;
         [Range(0.5f, 5f)] [SerializeField] private float _wakeyTime = 1f;
         [Range(0.5f, 2f)] [SerializeField] private float _destroyTimeout = 1f;
 
         private Animator[] _hoomans;
         private SpecialInputController _controller;
         private Coroutine _ringHandel;
+        private Coroutine _snoozeHandel;
+        private float _currCountdownValue;
         
         private static readonly int Wake = Animator.StringToHash("Wake");
 
         public void HoomansAwake() {
             Destroy(gameObject, _destroyTimeout);
+        }
+
+        public void Snooze() {
+            if (_currCountdownValue > float.Epsilon) return;
+            Debug.Log("SNOOOZE!!!");
+            _snoozeHandel = StartCoroutine(Countdown(_snoozeDuartion));
         }
 
         private void Start() {
@@ -45,8 +54,12 @@ namespace ClokysGoodMorning.Entities {
 
         private void RingHandler(bool state) {
             if (state) {
-                _ringHandel = StartCoroutine(Ring());
-            } else {
+                if (_currCountdownValue <= float.Epsilon)
+                    _ringHandel = StartCoroutine(Ring());
+                else {
+                    Debug.Log($"Snooze : {_currCountdownValue}");
+                }
+            } else if (_ringHandel != null) {
                 StopCoroutine(_ringHandel);
             }
         }
@@ -64,6 +77,16 @@ namespace ClokysGoodMorning.Entities {
             
             foreach (var animator in _hoomans) {
                 animator.SetBool(Wake, true);
+            }
+        }
+        
+        private IEnumerator Countdown(float countdownValue)
+        {
+            _currCountdownValue = countdownValue;
+            while (_currCountdownValue > 0)
+            {
+                yield return new WaitForSeconds(1.0f);
+                _currCountdownValue--;
             }
         }
 

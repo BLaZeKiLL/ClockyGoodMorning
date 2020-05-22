@@ -21,18 +21,18 @@ namespace ClokysGoodMorning.Behaviour {
         public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
             if (!_controller.ReachedEndOfPath) return;
 
-            var transform = animator.transform;
+            var position = animator.transform.position;
             
-            _seeker.StartPath(transform.position, PickRandomPoint(transform), path => {
+            _seeker.StartPath(position, PickRandomPoint(position), path => {
                 if (path.error) Debug.Log("Retry");
                 else _controller.Path = path;
             });
         }
 
-        private Vector3 PickRandomPoint (Transform transform) {
+        private Vector3 PickRandomPoint (Vector3 position) {
             var point = Random.insideUnitSphere * _wanderRadius;
             point.y = 0;
-            point += transform.position;
+            point += position;
             return point;
         }
 

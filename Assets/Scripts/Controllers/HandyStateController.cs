@@ -22,8 +22,7 @@ namespace ClokysGoodMorning.Controllers {
 
         private void OnTriggerEnter(Collider other) {
             if(!other.CompareTag("Player")) return;
-            _animator.SetBool(Chase, true);
-            _animator.SetBool(Wander, false);
+            SetStateChase();
         }
 
         private void OnTriggerStay(Collider other) {
@@ -33,6 +32,15 @@ namespace ClokysGoodMorning.Controllers {
 
         private void OnTriggerExit(Collider other) {
             if(!other.CompareTag("Player")) return;
+            SetStateWander();
+        }
+
+        public void SetStateChase() {
+            _animator.SetBool(Chase, true);
+            _animator.SetBool(Wander, false);
+        }
+
+        public void SetStateWander() {
             _animator.SetBool(Chase, false);
             _animator.SetBool(Wander, true);
         }
