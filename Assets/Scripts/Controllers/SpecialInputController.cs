@@ -1,5 +1,7 @@
 ﻿using System;
 
+using ClokysGoodMorning.Managers;
+
 using CodeBlaze.Controllers;
 
 using UnityEngine;
@@ -9,6 +11,8 @@ namespace ClokysGoodMorning.Controllers {
     [RequireComponent(typeof(TopDownCharacterController))]
     public class SpecialInputController : MonoBehaviour {
 
+        [SerializeField] private GameManager _gameManager;
+        
         public delegate void AlarmPressHandler(bool state);
         public event AlarmPressHandler AlarmPress;
 
@@ -27,6 +31,10 @@ namespace ClokysGoodMorning.Controllers {
             if (Input.GetKeyUp(KeyCode.Space)) {
                 AlarmPress?.Invoke(false);
                 _controller.CanMove = true;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Escape)) {
+                _gameManager.GamePause();
             }
         }
 

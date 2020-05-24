@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 using ClokysGoodMorning.Controllers;
+using ClokysGoodMorning.Managers;
 
 using CodeBlaze.Systems;
 
@@ -15,6 +16,8 @@ namespace ClokysGoodMorning.Entities {
         [Range(5, 30)] [SerializeField] private int _snoozeSecs = 10;
         [Range(1, 5)] [SerializeField] private int _wakeUpSecs = 1;
         [Range(0.5f, 2f)] [SerializeField] private float _destroyTimeout = 1f;
+
+        [SerializeField] private GameManager _gameManager;
 
         private Animator[] _hoomans;
         private SpecialInputController _controller;
@@ -39,6 +42,7 @@ namespace ClokysGoodMorning.Entities {
 
         private void OnDestroy() {
             _ringHandel?.Destroy();
+            _gameManager.AwakeHooman();
         }
 
         private void OnTriggerEnter(Collider other) {
@@ -56,10 +60,8 @@ namespace ClokysGoodMorning.Entities {
         private void RingHandler(bool state) {
             if (state) {
                 if (_snoozeHandel == null || _snoozeHandel.IsDone) {
-                    Debug.Log("Beep");
                     _ringHandel = new TickEvent(TickUtils.SecToTicks(_wakeUpSecs), tick => {
                         _controller.AlarmPress -= RingHandler;
-                        Debug.Log("Done");
                         foreach (var animator in _hoomans) {
                             animator.SetBool(Wake, true);
                         }

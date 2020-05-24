@@ -1,0 +1,25 @@
+﻿using CodeBlaze.Systems;
+
+using TMPro;
+
+using UnityEngine;
+
+namespace ClokysGoodMorning.UI.Menu {
+
+    public class WinMenu : MonoBehaviour {
+
+        [SerializeField] private TextMeshProUGUI _timeTaken;
+        [SerializeField] private GameObject _root;
+
+        public void Show(int ticks) {
+            _root.SetActive(true);
+            _timeTaken.text = $"Time Taken : {TickUtils.TicksToSec(ticks)}";
+        }
+
+        public void Hide() {
+            _root.SetActive(false);
+        }
+
+    }
+
+}

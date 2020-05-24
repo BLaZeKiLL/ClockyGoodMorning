@@ -45,7 +45,6 @@ namespace CodeBlaze.Systems {
 
         private void OnTick(object sender, TickSystem.TickArgs args) {
             _tick++;
-            Debug.Log(_tick);
             if (args.Tick - _startTick < _eventTick) return;
 
             IsDone = true;

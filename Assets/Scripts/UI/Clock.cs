@@ -30,7 +30,7 @@ namespace ClokysGoodMorning.UI {
         }
 
         private void OnTick(object sender, TickSystem.TickArgs args) {
-            _minHand.Rotate(0f, 0f, -4f);
+            _minHand.Rotate(0f, 0f, -6f);
             _hourHand.Rotate(0f, 0f, -0.5f);
         }
 

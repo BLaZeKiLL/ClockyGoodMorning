@@ -70,6 +70,8 @@ namespace CodeBlaze.Controllers {
         }
 
         private void Rotate() {
+            if (Time.timeScale <= float.Epsilon) return;
+            
             var ray = _camera.ScreenPointToRay(Input.mousePosition);
 
             if (!_ground.Raycast(ray, out float length)) return;
