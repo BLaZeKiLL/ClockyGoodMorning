@@ -3,6 +3,7 @@
 using TMPro;
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace ClokysGoodMorning.UI.Menu {
 
@@ -18,6 +19,11 @@ namespace ClokysGoodMorning.UI.Menu {
 
         public void Hide() {
             _root.SetActive(false);
+        }
+
+        public void NextLevel() {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings);
         }
 
     }

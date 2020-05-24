@@ -3,12 +3,14 @@
 using TMPro;
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace ClokysGoodMorning.UI {
 
     public class UIController : MonoBehaviour {
 
         [SerializeField] private TextMeshProUGUI _HoomanCount;
+        [SerializeField] private GameObject _AlarmHint;
         [SerializeField] private WinMenu _winMenu;
         [SerializeField] private PauseMenu _pauseMenu;
         [SerializeField] private GameOverMenu _gameOverMenu;
@@ -24,9 +26,18 @@ namespace ClokysGoodMorning.UI {
         public void ShowPauseMenu() {
             _pauseMenu.Show();
         }
-
+    
         public void ShowGameOverMenu() {
             _gameOverMenu.Show();
+        }
+
+        public void ToggleAlarmHint(bool state) {
+            _AlarmHint.SetActive(state);
+        }
+
+        public void MainMenu() {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene(0);
         }
 
     }

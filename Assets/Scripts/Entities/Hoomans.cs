@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 using ClokysGoodMorning.Controllers;
 using ClokysGoodMorning.Managers;
+using ClokysGoodMorning.UI;
 
 using CodeBlaze.Systems;
 
@@ -18,6 +19,7 @@ namespace ClokysGoodMorning.Entities {
         [Range(0.5f, 2f)] [SerializeField] private float _destroyTimeout = 1f;
 
         [SerializeField] private GameManager _gameManager;
+        [SerializeField] private UIController _ui;
 
         private Animator[] _hoomans;
         private SpecialInputController _controller;
@@ -48,17 +50,19 @@ namespace ClokysGoodMorning.Entities {
         private void OnTriggerEnter(Collider other) {
             if (!other.CompareTag("Player")) return;
             _controller = other.GetComponent<SpecialInputController>();
+            _ui.ToggleAlarmHint(true);
             _controller.AlarmPress += RingHandler;
         }
 
-        private void OnTriggerExit(Collider other) {
+        private void OnTriggerExit(Collider other) {    
             if (!other.CompareTag("Player")) return;
-
+            _ui.ToggleAlarmHint(false);
             _controller.AlarmPress -= RingHandler;
         }
 
         private void RingHandler(bool state) {
             if (state) {
+                _ui.ToggleAlarmHint(false);
                 if (_snoozeHandel == null || _snoozeHandel.IsDone) {
                     _ringHandel = new TickEvent(TickUtils.SecToTicks(_wakeUpSecs), tick => {
                         _controller.AlarmPress -= RingHandler;
@@ -70,6 +74,7 @@ namespace ClokysGoodMorning.Entities {
                     Debug.Log($"Snooze : {_snoozeHandel.GetTick()} Ticks");
                 }
             } else {
+                _ui.ToggleAlarmHint(true);
                 _ringHandel?.Destroy();
             }
         }
