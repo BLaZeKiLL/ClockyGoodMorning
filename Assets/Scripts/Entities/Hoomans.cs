@@ -17,9 +17,10 @@ namespace ClokysGoodMorning.Entities {
         [Range(5, 30)] [SerializeField] private int _snoozeSecs = 10;
         [Range(1, 5)] [SerializeField] private int _wakeUpSecs = 1;
         [Range(0.5f, 2f)] [SerializeField] private float _destroyTimeout = 1f;
+        [SerializeField] private List<GameObject> handy;
 
-        [SerializeField] private GameManager _gameManager;
-        [SerializeField] private UIController _ui;
+        private GameManager _gameManager;
+        private UIController _ui;
 
         private Animator[] _hoomans;
         private SpecialInputController _controller;
@@ -30,6 +31,7 @@ namespace ClokysGoodMorning.Entities {
         private static readonly int Wake = Animator.StringToHash("Wake");
 
         public void HoomansAwake() {
+            handy.ForEach(Destroy);
             Destroy(gameObject, _destroyTimeout);
         }
 
@@ -39,6 +41,8 @@ namespace ClokysGoodMorning.Entities {
         }
 
         private void Start() {
+            _gameManager = FindObjectOfType<GameManager>();
+            _ui = FindObjectOfType<UIController>();
             _hoomans = GetComponentsInChildren<Animator>();
         }
 
