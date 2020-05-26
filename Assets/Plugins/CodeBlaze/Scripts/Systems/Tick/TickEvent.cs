@@ -18,13 +18,15 @@ namespace CodeBlaze.Systems {
         private int _eventTick;
         private Type _type;
         private Action<int> _onComplete;
+        private Action<int> _onTick;
 
         private int _tick;
         private int _startTick;
 
-        public TickEvent(int eventTick, Action<int> onComplete = default, Type type = Type.NORMAL) {
+        public TickEvent(int eventTick, Action<int> onComplete = default, Action<int> onTick = default, Type type = Type.NORMAL) {
             _eventTick = eventTick;
             _onComplete = onComplete;
+            _onTick = onTick;
             _type = type;
 
             _startTick = TickSystem.GetTick();
@@ -45,7 +47,11 @@ namespace CodeBlaze.Systems {
 
         private void OnTick(object sender, TickSystem.TickArgs args) {
             _tick++;
-            if (args.Tick - _startTick < _eventTick) return;
+
+            if (args.Tick - _startTick < _eventTick) {
+                _onTick?.Invoke(_tick);
+                return;
+            }
 
             IsDone = true;
             _onComplete?.Invoke(_tick);
