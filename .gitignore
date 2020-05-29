@@ -71,3 +71,9 @@ crashlytics-build.properties
 
 /[Aa]ssets/Plugins/AstarPathfindingProject/
 /[Aa]ssets/ExampleAssets/
+
+/Assets/Scenes/Level2/
+/Assets/Scenes/MainMenu/
+/Assets/Scenes/Tutorial/
+/Assets/GraphCaches/
+/Assets/_TerrainAutoUpgrade/
