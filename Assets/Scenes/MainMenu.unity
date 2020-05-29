@@ -56,8 +56,8 @@ LightmapSettings:
   m_LightmapEditorSettings:
     serializedVersion: 12
     m_Resolution: 2
-    m_BakeResolution: 64
-    m_AtlasSize: 2048
+    m_BakeResolution: 32
+    m_AtlasSize: 1024
     m_AO: 1
     m_AOMaxDistance: 0
     m_CompAOExponent: 1
@@ -76,7 +76,7 @@ LightmapSettings:
     m_BakeBackend: 2
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 256
-    m_PVRSampleCount: 512
+    m_PVRSampleCount: 256
     m_PVRBounces: 4
     m_PVREnvironmentSampleCount: 256
     m_PVREnvironmentReferencePointCount: 2048
@@ -2493,7 +2493,7 @@ MonoBehaviour:
     spaceCount: 2
     wordCount: 3
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -3634,12 +3634,12 @@ PrefabInstance:
     - target: {fileID: 3077607472641175659, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000042566713
+      value: -0.000042744912
       objectReference: {fileID: 0}
     - target: {fileID: 3077607472641175659, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000059062317
+      value: 0.000059309546
       objectReference: {fileID: 0}
     - target: {fileID: 3077607472641175659, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}

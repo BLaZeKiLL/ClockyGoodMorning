@@ -90,26 +90,25 @@ namespace ClokysGoodMorning.Entities {
         }
 
         private void RingHandler(bool state) {
+            if (_snoozeHandel != null && !_snoozeHandel.IsDone) return;
+
             if (state) {
                 _ui.ToggleAlarmHint(false);
                 _ui.ToggleAlarmBar(true);
-                if (_snoozeHandel == null || _snoozeHandel.IsDone) {
-                    _ringHandel = new TickEvent(
-                        TickUtils.SecToTicks(_wakeUpSecs),
-                        tick => {
-                            _controller.AlarmPress -= RingHandler;
-                            _ui.ToggleAlarmBar(false);
-                            foreach (var animator in _hoomans) {
-                                animator.SetBool(Wake, true);
-                            }
-                        }, 
-                        tick => {
-                            _ui.UpdateAlarmBar((float)tick / (_wakeUpSecs * 5));
-                        }, 
-                        TickEvent.Type.MICRO);
-                } else {
-                    Debug.Log($"Snooze : {_snoozeHandel.GetTick()} Ticks");
-                }
+                
+                _ringHandel = new TickEvent(
+                    TickUtils.SecToTicks(_wakeUpSecs),
+                    tick => {
+                        _controller.AlarmPress -= RingHandler;
+                        _ui.ToggleAlarmBar(false);
+                        foreach (var animator in _hoomans) {
+                            animator.SetBool(Wake, true);
+                        }
+                    }, 
+                    tick => {
+                        _ui.UpdateAlarmBar((float)tick / (_wakeUpSecs * 5));
+                    }, 
+                    TickEvent.Type.MICRO);
             } else {
                 _ui.ToggleAlarmHint(true);
                 _ui.ToggleAlarmBar(false);

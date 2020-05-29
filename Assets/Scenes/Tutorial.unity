@@ -56,8 +56,8 @@ LightmapSettings:
   m_LightmapEditorSettings:
     serializedVersion: 12
     m_Resolution: 2
-    m_BakeResolution: 64
-    m_AtlasSize: 2048
+    m_BakeResolution: 32
+    m_AtlasSize: 1024
     m_AO: 1
     m_AOMaxDistance: 0
     m_CompAOExponent: 1
@@ -2244,12 +2244,12 @@ PrefabInstance:
     - target: {fileID: 3077607472641175659, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000019251202
+      value: -0.00000001922533
       objectReference: {fileID: 0}
     - target: {fileID: 3077607472641175659, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000013549299
+      value: 0.000000013513485
       objectReference: {fileID: 0}
     - target: {fileID: 3077607472641175659, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}
@@ -2289,12 +2289,12 @@ PrefabInstance:
     - target: {fileID: 3077607472929437473, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -1.234568e-12
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3077607472929437473, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 3.3395509e-12
+      value: -5.098144e-13
       objectReference: {fileID: 0}
     - target: {fileID: 3077607472929437474, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}
@@ -8378,6 +8378,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922193567732939987, guid: 63092d311882b2b4d819b7a05a0344ba,
+        type: 3}
+      propertyPath: m_Name
+      value: TMP SubMeshUI [Roboto-Black Atlas Material + Font Awesome 5 Free-Solid-900
+        SDF Atlas]
       objectReference: {fileID: 0}
     - target: {fileID: 2922193567732939989, guid: 63092d311882b2b4d819b7a05a0344ba,
         type: 3}
