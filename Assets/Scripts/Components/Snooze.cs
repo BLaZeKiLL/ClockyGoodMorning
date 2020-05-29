@@ -19,8 +19,7 @@ namespace ClokysGoodMorning.Components {
 
         private void OnTriggerEnter(Collider other) {
             if (!other.CompareTag("Player")) return;
-
-            _hoomans.Snooze();
+            _hoomans.Snooze(other.transform.position + Vector3.up);
             _stateController.SetStateWander();
         }
 

@@ -13,6 +13,8 @@ namespace ClokysGoodMorning.Controllers {
         typeof(SpecialInputController))]
     public class ClockyAnimationController : MonoBehaviour {
 
+        [SerializeField] private AudioSource _walkAudio;
+        
         private Animator _animator;
         private TopDownCharacterController _controller;
         private SpecialInputController _specialController;
@@ -35,6 +37,14 @@ namespace ClokysGoodMorning.Controllers {
 
         private void ControllerOnMovementUpdate(Vector3 direction, float speed) {
             _animator.SetFloat(Speed, direction.magnitude * speed);
+        }
+
+        public void PlayWalkSound() {
+            _walkAudio.Play();
+        }
+
+        public void StopWalkSound() {
+            _walkAudio.Stop();
         }
 
     }

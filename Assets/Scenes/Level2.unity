@@ -12770,6 +12770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1665771996}
   - component: {fileID: 1665771997}
+  - component: {fileID: 1665771998}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -12806,6 +12807,20 @@ MonoBehaviour:
   _levelDuration: 300
   _hoomanCount: 8
   _ui: {fileID: 241651020}
+--- !u!114 &1665771998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665771995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 337aa80b15e74702a62b85ab8e7adb9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SnoozeText: {fileID: 1205592676662908123, guid: cc4b47c05e2f1374d9959d01ba327f83,
+    type: 3}
 --- !u!1001 &1669676317
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14463,12 +14478,12 @@ PrefabInstance:
     - target: {fileID: 3077607472641175659, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000053478172
+      value: 0.000053463864
       objectReference: {fileID: 0}
     - target: {fileID: 3077607472641175659, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00007419233
+      value: -0.000074181786
       objectReference: {fileID: 0}
     - target: {fileID: 3077607472641175659, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}
@@ -14518,12 +14533,12 @@ PrefabInstance:
     - target: {fileID: 3077607472929437473, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -5.4569675e-11
       objectReference: {fileID: 0}
     - target: {fileID: 3077607472929437473, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -1.09139356e-11
+      value: 2.9831423e-10
       objectReference: {fileID: 0}
     - target: {fileID: 3077607472929437473, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}

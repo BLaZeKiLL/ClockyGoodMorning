@@ -2244,12 +2244,12 @@ PrefabInstance:
     - target: {fileID: 3077607472641175659, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000019473847
+      value: -0.000000019251202
       objectReference: {fileID: 0}
     - target: {fileID: 3077607472641175659, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00000001385828
+      value: 0.000000013549299
       objectReference: {fileID: 0}
     - target: {fileID: 3077607472641175659, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}
@@ -2289,12 +2289,12 @@ PrefabInstance:
     - target: {fileID: 3077607472929437473, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -1.234568e-12
       objectReference: {fileID: 0}
     - target: {fileID: 3077607472929437473, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -1.9806379e-13
+      value: 3.3395509e-12
       objectReference: {fileID: 0}
     - target: {fileID: 3077607472929437474, guid: 3408d9a24d8716a4ab5388b591d8aa61,
         type: 3}
@@ -4593,6 +4593,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1579452348}
   - component: {fileID: 1579452349}
+  - component: {fileID: 1579452350}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4629,6 +4630,20 @@ MonoBehaviour:
   _levelDuration: 180
   _hoomanCount: 2
   _ui: {fileID: 1689186350}
+--- !u!114 &1579452350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579452347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 337aa80b15e74702a62b85ab8e7adb9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SnoozeText: {fileID: 1205592676662908123, guid: cc4b47c05e2f1374d9959d01ba327f83,
+    type: 3}
 --- !u!1001 &1590582905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8246,6 +8261,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 664550670, guid: 63092d311882b2b4d819b7a05a0344ba, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 664550670, guid: 63092d311882b2b4d819b7a05a0344ba, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2922193567283774280, guid: 63092d311882b2b4d819b7a05a0344ba,
         type: 3}
       propertyPath: m_Name
@@ -9320,6 +9343,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wakey1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120045857668738891, guid: fb65703ed1e196b459166547a97d127a,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 7.5602074
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120045857668738891, guid: fb65703ed1e196b459166547a97d127a,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 1.1574154
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb65703ed1e196b459166547a97d127a, type: 3}

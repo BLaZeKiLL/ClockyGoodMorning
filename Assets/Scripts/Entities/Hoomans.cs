@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using ClokysGoodMorning.Controllers;
 using ClokysGoodMorning.Managers;
 using ClokysGoodMorning.UI;
+using ClokysGoodMorning.Utils;
 
 using CodeBlaze.Systems;
 
@@ -22,10 +23,14 @@ namespace ClokysGoodMorning.Entities {
         [SerializeField] private Scrollbar _snoozeBar;
         [SerializeField] private List<GameObject> handy;
 
+        [SerializeField] private AudioClip _wakeUpSound;
+        [SerializeField] private AudioClip _snoozeSound;
+        
         private GameManager _gameManager;
         private UIController _ui;
 
         private Animator[] _hoomans;
+        private AudioSource _audio;
         private SpecialInputController _controller;
         
         private TickEvent _ringHandel;
@@ -38,11 +43,14 @@ namespace ClokysGoodMorning.Entities {
         public void HoomansAwake() {
             handy.ForEach(Destroy);
             _gameManager.AwakeHooman();
+            PlayWakeUpSound();
             Destroy(gameObject, _destroyTimeout);
         }
 
-        public void Snooze() {
+        public void Snooze(Vector3 position) {
             if (_snoozeHandel != null && !_snoozeHandel.IsDone) return;
+            PlaySnoozeSound();
+            PopupText.Create(position);
             _ui.ToggleAlarmHint(false);
             _snoozeBar.transform.parent.parent.gameObject.SetActive(true);
             _snoozeHandel = new TickEvent(
@@ -58,6 +66,7 @@ namespace ClokysGoodMorning.Entities {
             _gameManager = FindObjectOfType<GameManager>();
             _ui = FindObjectOfType<UIController>();
             _hoomans = GetComponentsInChildren<Animator>();
+            _audio = GetComponent<AudioSource>();
         }
 
         private void OnDestroy() {
@@ -106,6 +115,16 @@ namespace ClokysGoodMorning.Entities {
                 _ui.ToggleAlarmBar(false);
                 _ringHandel?.Destroy();
             }
+        }
+
+        private void PlayWakeUpSound() {
+            _audio.clip = _wakeUpSound;
+            _audio.Play();
+        }
+
+        private void PlaySnoozeSound() {
+            _audio.clip = _snoozeSound;
+            _audio.Play();
         }
 
     }

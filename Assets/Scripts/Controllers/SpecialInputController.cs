@@ -12,6 +12,7 @@ namespace ClokysGoodMorning.Controllers {
     public class SpecialInputController : MonoBehaviour {
 
         [SerializeField] private GameManager _gameManager;
+        [SerializeField] private AudioSource _AlarmSound;
         
         public delegate void AlarmPressHandler(bool state);
         public event AlarmPressHandler AlarmPress;
@@ -25,11 +26,13 @@ namespace ClokysGoodMorning.Controllers {
         private void Update() {
             if (Input.GetKeyDown(KeyCode.Space)) {
                 AlarmPress?.Invoke(true);
+                _AlarmSound.Play();
                 _controller.CanMove = false;
             }
 
             if (Input.GetKeyUp(KeyCode.Space)) {
                 AlarmPress?.Invoke(false);
+                _AlarmSound.Stop();
                 _controller.CanMove = true;
             }
 
